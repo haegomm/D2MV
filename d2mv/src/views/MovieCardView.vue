@@ -4,23 +4,24 @@
     <div class="card-body">
       <h5 class="card-title">{{ movie.title}}</h5>
     </div>
-    
+    <MovieDetail :movie="movie"/>
   </div>
 </template>
 
 <script>
-import MovieDetailVue from '@/components/MovieDetail.vue';
 import axios from 'axios'
+import MovieDetail from '@/components/MovieDetail.vue'
 
 export default {
   name: "MovieCardView",
   components: {
-    MovieDetailVue
+    MovieDetail
   },
+  
   data() {
     return {
       youTubeURL: null,
-      
+      movie_d: null,
     }
   },
   props: {
@@ -50,7 +51,8 @@ export default {
           console.log(error)
         })
     }
-  }
+  },
+  
 };
 </script>
 
