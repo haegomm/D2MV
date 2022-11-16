@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>추천 영화 추가하기</h1>
-    <MovieFrom />
+    <MovieForm/>
   </div>
 </template>
 
