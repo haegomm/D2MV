@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import VillageView from '../views/VillageView.vue'
 import RecommendMoviesView from '../views/RecommendMoviesView.vue'
 import MovieCardView from '../views/MovieCardView.vue'
+import AddMovieView from '../views/AddMovieView.vue'
 
 
 Vue.use(VueRouter)
@@ -22,6 +23,11 @@ const routes = [
     path: '/movie',
     name: 'movie',
     component: MovieCardView
+  },
+  {
+    path: '/add',
+    name: 'add',
+    component: AddMovieView
   },
   // {
   //   path: '/about',
