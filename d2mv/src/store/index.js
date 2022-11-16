@@ -5,6 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    residents: [
+      {
+        id: 1,
+        name: 'leegaeeun',
+        movies: [
+          {
+            title: 'thor',
+            poster_path: '#'
+            
+          }
+        ],
+      }
+    ]
   },
   getters: {
   },
