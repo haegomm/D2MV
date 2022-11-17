@@ -8,6 +8,7 @@
         :movie="movie"
       />
     </div>
+    <router-link to="/add">Add Movie</router-link>
   </div>
 </template>
 
