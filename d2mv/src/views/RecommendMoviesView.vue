@@ -8,7 +8,7 @@
         :movie="movie"
       />
     </div>
-    <router-link to="/add">Add Movie</router-link>
+    <button @click="goAdd">Add Movie</button>
   </div>
 </template>
 
@@ -17,6 +17,11 @@ import MovieCardView from '@/views/MovieCardView.vue';
 
 export default {
   name: "RecommendMoviesView",
+  data() {
+    return {
+      id: null,
+    }
+  },
   components: {
     MovieCardView
   },
@@ -32,6 +37,16 @@ export default {
       return who.movies
     }
   },
+  methods: {
+    goAdd() {
+      this.$router.push({ name: 'add' })
+    }
+  }
+  // created() {
+  //   this.id = this.$route.params.id
+  //   console.log(this.id)
+  // }
+  
 };
 </script>
 

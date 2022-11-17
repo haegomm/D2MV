@@ -1,29 +1,29 @@
 <template>
   <div>
     <div>
-      <form @submit.prevent="">
-        <input type="text" v-model.trim="addmovietitle" @input="searchMovie" />
+      <form @submit.prevent="searchMovie">
+        <input type="text" v-model.trim="addmovietitle" />
         <button @click="searchMovie">검색</button>
       </form>
-      <SearchItems
+    </div>
+      <MovieFormItem
         v-for="(result, index) in results"
         :key="index"
         :result="result"
       />
-    </div>
     <br />
-    <button>Add</button>
+    <button @click="AddToMovies">Add</button>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import SearchItems from "@/components/SearchItems";
+import MovieFormItem from "@/components/MovieFormItem";
 
 export default {
   name: "MovieForm",
   components: {
-    SearchItems,
+    MovieFormItem,
   },
   data() {
     return {
@@ -55,9 +55,15 @@ export default {
           });
       }
     },
+    AddToMovies() {
+      console.log(2)
+      this.$store.dispatch("AddToMovies", this.$route.params.id);
+    },
   },
 };
 </script>
 
 <style>
+
+
 </style>

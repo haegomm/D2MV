@@ -25,7 +25,7 @@ const routes = [
     component: MovieCardView
   },
   {
-    path: '/add',
+    path: '/add/:id',
     name: 'add',
     component: AddMovieView
   },

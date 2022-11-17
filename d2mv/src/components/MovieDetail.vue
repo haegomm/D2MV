@@ -7,7 +7,7 @@
         <img :src="poster_path" alt="">
       </div>
     </vue-final-modal>
-    <v-button @click="showModal = true">More Detail</v-button>
+    <button @click="showModal = true">More Detail</button>
   </div>
 </template>
 

@@ -10,9 +10,20 @@ import MovieForm from "@/components/MovieForm";
 
 export default {
   name: "AddMovieView",
+  data() {
+    return {
+      id: null,
+    }
+  },
   components: {
     MovieForm,
   },
+  computed: {
+  },
+  // mounted() {
+  //   this.id = this.$route.params.id
+  //   console.log(this.id)
+  // },
 };
 </script>
 
