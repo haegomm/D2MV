@@ -4,6 +4,7 @@
       <span class="modal__title">{{movie.title}}</span>
       <div class="modal__content">
         <p>{{movie.overview}}</p>
+        <img :src="poster_path" alt="">
       </div>
     </vue-final-modal>
     <v-button @click="showModal = true">More Detail</v-button>
