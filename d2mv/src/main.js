@@ -5,8 +5,10 @@ import router from './router'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import vfmPlugin from 'vue-final-modal'
+import VueCarousel from 'vue-carousel'
 
 Vue.use(vfmPlugin)
+Vue.use(VueCarousel)
 
 Vue.config.productionTip = false
 

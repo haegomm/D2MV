@@ -50,6 +50,70 @@ export default new Vuex.Store({
             "vote_average": 8.29
           },
         ],
+      },
+      {
+        id: '2',
+        name: 'songdaehyun',
+        movies: [
+          {
+            "poster_path": "/zDNAeWU0PxKolEX1D8Vn1qWhGjH.jpg",
+            "adult": false,
+            "overview": "Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+            "release_date": "2014-11-05",
+            "genre_ids": [
+              12,
+              18,
+              878
+            ],
+            "id": 157336,
+            "original_title": "Interstellar",
+            "original_language": "en",
+            "title": "Interstellar",
+            "backdrop_path": "/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg",
+            "popularity": 12.481061,
+            "vote_count": 5600,
+            "video": false,
+            "vote_average": 8.12
+          },
+          {
+            "poster_path": "/cj9UsJEN5bNf6ZoF1BbKjKN81hc.jpg",
+            "adult": false,
+            "overview": "The continuing saga of the Corleone crime family tells the story of a young Vito Corleone growing up in Sicily and in 1910s New York; and follows Michael Corleone in the 1950s as he attempts to expand the family business into Las Vegas, Hollywood and Cuba",
+            "release_date": "1974-12-20",
+            "genre_ids": [
+              18,
+              80
+            ],
+            "id": 240,
+            "original_title": "The Godfather: Part II",
+            "original_language": "en",
+            "title": "The Godfather: Part II",
+            "backdrop_path": "/gLbBRyS7MBrmVUNce91Hmx9vzqI.jpg",
+            "popularity": 4.003715,
+            "vote_count": 1894,
+            "video": false,
+            "vote_average": 8.1
+          },
+          {
+            "poster_path": "/9Ku1CNkZQh3EYikM974hj7SNZfk.jpg",
+            "adult": false,
+            "overview": "A true story of two men who should never have met - a quadriplegic aristocrat who was injured in a paragliding accident and a young man from the projects.",
+            "release_date": "2011-11-02",
+            "genre_ids": [
+              18,
+              35
+            ],
+            "id": 77338,
+            "original_title": "Intouchables",
+            "original_language": "fr",
+            "title": "The Intouchables",
+            "backdrop_path": "/ihWaJZCUIon2dXcosjQG2JHJAPN.jpg",
+            "popularity": 3.698279,
+            "vote_count": 2740,
+            "video": false,
+            "vote_average": 8.1
+          },
+        ],
       }
     ],
   },
