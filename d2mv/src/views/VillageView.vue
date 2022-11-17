@@ -1,8 +1,19 @@
 <template>
-  <div>
-    <img src="https://cdn-icons-png.flaticon.com/512/2142/2142687.png" alt="" id="0" @click="getOwner">
-    <img src="../assets/10.png" alt="building" id="1" @click="getOwner"/>
-  </div>
+  
+    <carousel>
+      <slide>
+        <img src="https://cdn-icons-png.flaticon.com/512/2142/2142687.png" alt="" id="0" @click="getOwner">
+      </slide>
+      <slide>
+        <img src="../assets/10.png" alt="building" id="1" @click="getOwner">
+      </slide>
+      <slide>
+        <img src="../assets/6.png" alt="building">
+      </slide>
+      <slide>
+        <img src="../assets/5.png" alt="building">
+      </slide>
+    </carousel>
 </template>
 
 <script>

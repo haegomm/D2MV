@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Recommend Movies</h1>
+    <h1>Recommended Movies</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <MovieCardView
         v-for="movie in getList"
