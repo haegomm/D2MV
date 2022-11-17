@@ -32,17 +32,6 @@ export default {
       return who.movies
     }
   },
-  // created() {
-  //   const id = this.$route.params.id
-  //     let who
-  //     for (const person of this.$store.state.residents) {
-  //       console.log(person)
-  //       if (person.id === id) {
-  //         who = person
-  //       }
-  //     }
-  //     console.log(who.movies)
-  // }
 };
 </script>
 

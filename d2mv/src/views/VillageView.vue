@@ -1,8 +1,7 @@
 <template>
   <div>
     <img src="https://cdn-icons-png.flaticon.com/512/2142/2142687.png" alt="" id="1" @click="getOwner">
-    <router-link to="/recommend">Recommend</router-link> |
-    <router-link to="/movie">Movie</router-link>
+    
     <img src="../assets/10.png" alt="building" />
   </div>
 </template>

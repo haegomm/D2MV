@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/recommend">Recommend</router-link> |
-      <router-link to="/movie">Movie</router-link>
+      
     </nav>
     <router-view />
   </div>
