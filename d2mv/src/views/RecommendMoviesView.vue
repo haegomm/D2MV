@@ -3,8 +3,9 @@
     <nav>
       <router-link :to="{name: 'village'}">마을로 돌아가기</router-link>
     </nav>
-    <h1>Recommended Movies</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <h1 style="margin-top:5rem">Recommended Movies</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 10%; margin-top: 5%; margin-left: 10%; margin-right: 10%;
+      " >
       <MovieCardView
         v-for="movie in getList"
         :key = "movie.id"
@@ -24,7 +25,6 @@ export default {
   data() {
     return {
       id: null,
-      showModal: false
     }
   },
   components: {

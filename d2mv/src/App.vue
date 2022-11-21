@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <nav class="cl-effect-15">
+    <!-- <nav class="cl-effect-15">
       <a href="#" data-hover="Home">Home</a>
       <a href="#" data-hover="Movies">Movies</a>
       <a href="#" data-hover="Recommend">Recommend</a>
-    </nav>
+    </nav> -->
     <footer>(주) 송은희 건설</footer>
     <router-view />
   </div>
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

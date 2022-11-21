@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <nav>
       <router-link :to="{name: 'recommend', params: {id: getId}}">뒤로 가기</router-link>
     </nav>

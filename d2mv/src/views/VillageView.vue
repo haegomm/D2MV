@@ -41,27 +41,21 @@
     </div>
     <!-- <carousel :per-page='1'>
       <slide>
-        <img src="../assets/city.png" usemap="#image-map" id=imagen >
+        <img src="../assets/city.png" usemap="#image-map" class="mapper" >
         <map name="image-map" id="image-map">
-          <area target="_parent" alt="이가은" title="이가은" href="http://localhost:8080/recommend/0" coords="407,560,327,318" shape="rect">
-          <area target="_top" alt="송대현" title="송대현" href="http://localhost:8080/recommend/1" coords="752,562,644,311" shape="rect">
+          <area target="_parent" alt="이가은" title="이가은" href="http://localhost:8080/recommend/0" coords="407,560,327,318" shape="rect" >
+          <area target="_top" alt="송대현" title="송대현" href="http://localhost:8080/recommend/1" coords="752,562,644,311" shape="rect" >
         </map> 
 
-      
       </slide>
       <slide>
-        
-      </slide>
-      <slide>
-        
-      </slide>
-      <slide>
-        
+
       </slide>
     </carousel> -->
-    <div class="background">
+    
+    <!-- <div class="background">
       <img id="b1" class="shadow-pop-tr" src="../assets/5.png" alt="" />
-      <img id="b2" class="shadow-pop-tr" src="../assets/7.png" alt="" />
+      <img id="b2" class="shadow-pop-tr" src="../assets/7.png" alt="" /> -->
       <!-- <img id="b3" class="shadow-pop-tr" src="../assets/8.png" alt="" /> -->
       <!-- <img id="b4" class="shadow-pop-tr" src="../assets/9.png" alt="" /> -->
       <!-- <img id="b5" class="shadow-pop-tr" src="../assets/10.png" alt="" /> -->
@@ -72,7 +66,7 @@
       <!-- <img id="b10" class="shadow-pop-tr" src="../assets/15.png" alt="" /> -->
       <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
   
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -80,9 +74,11 @@
 <script>
 
 
-
 export default {
   name: "VillageView",
+  components: {
+    
+  },
   data() {
     return{
       snowing: false
@@ -112,6 +108,7 @@ export default {
 
 <style scoped>
 
+
 .snowflake {
   color: #fff;
   font-size: 1em;
@@ -133,10 +130,10 @@ export default {
   background-position: center;
 }
 
-img {
+/* img {
   display: inline-block;
   position: absolute;
-}
+} */
 
 * {
   margin: 0;
@@ -234,9 +231,9 @@ img {
   }
 } */
 
-img:hover {
+/* img:hover {
   transition: all 0.2s linear;
   transform: scale(1.05);
-}
+} */
 
 </style>

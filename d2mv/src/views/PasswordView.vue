@@ -5,7 +5,7 @@
       </nav>
     <h1>비밀번호 입력해주세요</h1>
     <form action="#" @submit.prevent="confirm">
-      <input type="text" v-model="password">
+      <input type="password" v-model="password">
       <input type="submit" value="제출하기">
     </form>
     
