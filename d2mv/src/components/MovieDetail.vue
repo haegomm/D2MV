@@ -1,15 +1,31 @@
 <template>
   <div>
     <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
-      <span class="modal__title">{{movie.title}}</span>
       <div class="modal__content">
-        <p>{{movie.overview}}</p>
-        <img :src="poster_path" alt="">
-        <hr>
-        <div id="area">
-          <iframe :src="youTubeURL" frameborder="0" v-if="showModal" id="video"></iframe>
+        <div>
+          <div>
+            <img :src="poster_path" alt="">
+          </div>
         </div>
-        
+        <div>
+          <h1>
+            &nbsp;&nbsp;&nbsp;
+          </h1>
+        </div>
+        <div>
+          <span class="modal__title">{{movie.title}}</span>
+          <br>
+          <br>
+          <p>시놉시스</p>
+          <div>
+            <p>{{movie.overview}}</p>
+          </div>
+          <br>
+          <p>트레일러</p>
+          <div id="area">
+              <iframe :src="youTubeURL" frameborder="0" v-if="showModal" id="video"></iframe>
+          </div>
+        </div>  
       </div>
     </vue-final-modal>
     <button @click="showModal = true">More Detail</button>
@@ -76,9 +92,9 @@ export default {
   display: flex;
   flex-direction: column;
   max-height: 90%;
-  margin: 0 100rem;
+  margin:20rem;
   padding: 1rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #527cb2;
   border-radius: 0.25rem;
   background: #fff;
 }
@@ -87,6 +103,8 @@ export default {
   font-weight: 700;
 }
 .modal__content {
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
   overflow-y: auto;
 }

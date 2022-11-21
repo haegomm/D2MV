@@ -1,5 +1,8 @@
 <template>
   <div>
+    <nav>
+      <router-link :to="{name: 'village'}">마을로 돌아가기</router-link>
+    </nav>
     <h1>Recommended Movies</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <MovieCardView
@@ -8,7 +11,8 @@
         :movie="movie"
       />
     </div>
-    <button @click="goAdd">Add Movie</button>
+    <button @click="goPass">Add Movie</button>
+    
   </div>
 </template>
 
@@ -20,6 +24,7 @@ export default {
   data() {
     return {
       id: null,
+      showModal: false
     }
   },
   components: {
@@ -35,11 +40,12 @@ export default {
         }
       }
       return who.movies
-    }
+    },
+    
   },
   methods: {
-    goAdd() {
-      this.$router.push({ name: 'add' })
+    goPass() {
+      this.$router.push({ name: 'password' })
     }
   }
   // created() {
@@ -51,4 +57,6 @@ export default {
 </script>
 
 <style>
+
 </style>
+

@@ -10,6 +10,7 @@ export default new Vuex.Store({
       {
         id: '0',
         name: 'leegaeun',
+        password: '1234',
         movies: [
           {
             "poster_path": "/oAt6OtpwYCdJI76AVtVKW1eorYx.jpg",
@@ -114,7 +115,117 @@ export default new Vuex.Store({
             "vote_average": 8.1
           },
         ],
-      }
+      },
+      {
+        id: '3',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '4',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '5',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '6',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '7',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '8',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '9',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '10',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '11',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '12',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '13',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '14',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '15',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '16',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '17',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '18',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '19',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '20',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '21',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '22',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '23',
+        name: '?',
+        movies:[]
+      },
+      {
+        id: '24',
+        name: '?',
+        movies:[]
+      },  
     ],
     addmovie: null,
   },

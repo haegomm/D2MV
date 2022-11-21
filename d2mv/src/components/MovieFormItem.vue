@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .cards-list {
   z-index: 0;
   width: 100%;

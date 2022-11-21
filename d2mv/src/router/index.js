@@ -4,6 +4,7 @@ import VillageView from '../views/VillageView.vue'
 import RecommendMoviesView from '../views/RecommendMoviesView.vue'
 import MovieCardView from '../views/MovieCardView.vue'
 import AddMovieView from '../views/AddMovieView.vue'
+import PasswordView from '../views/PasswordView.vue'
 
 
 Vue.use(VueRouter)
@@ -29,6 +30,11 @@ const routes = [
     name: 'add',
     component: AddMovieView
   },
+  {
+    path: '/password/:id',
+    name: 'password',
+    component: PasswordView
+  }
 ]
 
 const router = new VueRouter({
