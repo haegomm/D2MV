@@ -54,22 +54,15 @@
     </div>
     <!-- <carousel :per-page='1'>
       <slide>
-        <img src="../assets/city.png" usemap="#image-map" id=imagen >
+        <img src="../assets/city.png" usemap="#image-map" class="mapper" >
         <map name="image-map" id="image-map">
-          <area target="_parent" alt="이가은" title="이가은" href="http://localhost:8080/recommend/0" coords="407,560,327,318" shape="rect">
-          <area target="_top" alt="송대현" title="송대현" href="http://localhost:8080/recommend/1" coords="752,562,644,311" shape="rect">
+          <area target="_parent" alt="이가은" title="이가은" href="http://localhost:8080/recommend/0" coords="407,560,327,318" shape="rect" >
+          <area target="_top" alt="송대현" title="송대현" href="http://localhost:8080/recommend/1" coords="752,562,644,311" shape="rect" >
         </map> 
 
-      
       </slide>
       <slide>
-        
-      </slide>
-      <slide>
-        
-      </slide>
-      <slide>
-        
+
       </slide>
     </carousel> -->
   </div>
@@ -79,9 +72,11 @@
 <script>
 
 
-
 export default {
   name: "VillageView",
+  components: {
+    
+  },
   data() {
     return{
       snowing: false
@@ -119,6 +114,7 @@ button {
   position: absolute;
 }
 
+
 .snowflake {
   color: #fff;
   font-size: 1em;
@@ -152,9 +148,11 @@ button {
   max-width: 100%;
 } */
 
-.shadow-pop-tr {
+/* img {
+  display: inline-block;
+>>>>>>> 6f78f530ee869f2badb894273238c2329e8a1c00
   position: absolute;
-}
+} */
 
 
 #b1 {
