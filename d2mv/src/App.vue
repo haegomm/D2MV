@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="background">
     <nav class="cl-effect-15">
       <a href="#" data-hover="Home">Home</a>
       <a href="#" data-hover="Movies">Movies</a>
@@ -90,6 +90,19 @@ nav a:focus {
   -moz-transform: scale(0.9);
   transform: scale(0.9);
   opacity: 0;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/배경6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1.1);
 }
 
 footer {

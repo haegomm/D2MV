@@ -3,9 +3,11 @@
     <div>
       <form @submit.prevent="searchMovie">
         <input type="text" v-model.trim="addmovietitle" />
+        <div class="search jello-horizontal" style="display:flex; flex-direction: column;">
         <button class="search jello-horizontal" @click="searchMovie">
           &#128064;
         </button>
+        </div>
       </form>
     </div>
     <div class="cards_list">
@@ -147,8 +149,8 @@ export default {
 }
 
 .topdiv {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .cards_list {

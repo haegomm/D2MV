@@ -1,12 +1,10 @@
 <template>
-  <div>
-
+  <div class="addbox">
     <nav>
       <router-link :to="{name: 'recommend', params: {id: getId}}">뒤로 가기</router-link>
     </nav>
     <h1 class="title">Add Recommend Movie</h1>
     <MovieForm/>
-
   </div>
 </template>
 
@@ -29,11 +27,6 @@ export default {
       return this.$route.params.id
     }
   },
-
-  // mounted() {
-  //   this.id = this.$route.params.id
-  //   console.log(this.id)
-  // },
 };
 </script>
 
@@ -42,5 +35,11 @@ export default {
 
 .title {
   font-family: "Gaegu", cursive;
+}
+
+.addbox {
+  width:100%;
+  height:100%;
+  position: relative;
 }
 </style>
