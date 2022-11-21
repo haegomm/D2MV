@@ -1,10 +1,12 @@
 <template>
   <div>
+
     <nav>
       <router-link :to="{name: 'recommend', params: {id: getId}}">뒤로 가기</router-link>
     </nav>
-    <h1>추천 영화 추가하기</h1>
+    <h1 class="title">Add Recommend Movie</h1>
     <MovieForm/>
+
   </div>
 </template>
 
@@ -16,16 +18,18 @@ export default {
   data() {
     return {
       id: null,
-    }
+    };
   },
   components: {
     MovieForm,
   },
+
   computed: {
     getId() {
       return this.$route.params.id
     }
   },
+
   // mounted() {
   //   this.id = this.$route.params.id
   //   console.log(this.id)
@@ -34,4 +38,9 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap");
+
+.title {
+  font-family: "Gaegu", cursive;
+}
 </style>
