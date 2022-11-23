@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <nav>
-      
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Recommend</a>
     </nav>
+    <footer>(주) 송은희 건설</footer>
     <router-view />
   </div>
 </template>
 
-<style>
+<style scoped>
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,5 +32,27 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/배경6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1.1);
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 2%;
+  text-align: center;
+  color: white;
+  z-index: 1;
 }
 </style>
