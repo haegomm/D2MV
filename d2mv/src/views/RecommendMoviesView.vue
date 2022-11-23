@@ -8,8 +8,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <h1>Recommended Movies</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="cardlist">
               <MovieCardView
                 v-for="movie in getList"
                 :key = "movie.id"
@@ -19,7 +18,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button id="passwordButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passwordModal" >영화 추가하러가기(비번입력)</button>
+            <button id="passwordButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passwordModal" >Add</button>
           </div>
         </div>
       </div>
@@ -81,7 +80,53 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.modal-dialog {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 8%;
+  max-width: none;
+  width: 100%;
+  height: 80%;
+}
+
+.modal-content {
+  position: absolute;
+  display: flex;
+  width: 70%;
+  height: 100%;
+}
+  .modal-body {
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+  }
+
+.cardlist {
+  display: flex;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0;
+  grid-template-columns: repeat(auto-fill, minmax(auto, auto));
+  grid-template-rows: 1;
+}
+
+.card {
+  /* position: absolute;
+  display: block; */
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 500px;
+  width: 350px;
+}
+
 
 </style>
 

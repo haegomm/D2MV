@@ -1,10 +1,12 @@
 <template>
   <div class="card">
-    <img :src="poster_path" class="card-img-top" alt="">
     <div class="card-body">
-      <h5 class="card-title">{{ movie.title}}</h5>
+      <img :src="poster_path" class="card-img-top" alt="">
+      <!-- <h5 class="card-title">{{ movie.title}}</h5> -->
     </div>
-    <MovieDetail :movie="movie"/>
+    <MovieDetail 
+    :movie="movie"
+    :show="show"/>
   </div>
 </template>
 
@@ -31,9 +33,14 @@ export default {
       const baseURL = 'https://image.tmdb.org/t/p/w500'
       return baseURL + this.movie.poster_path
     }
-  },  
+  },
+  methods: {
+  }  
 };
 </script>
 
 <style>
+.card-body {
+  display: block;
+}
 </style>
