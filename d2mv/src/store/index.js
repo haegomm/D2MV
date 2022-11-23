@@ -55,6 +55,7 @@ export default new Vuex.Store({
       {
         id: '1',
         name: 'songdaehyun',
+        password: '4321',
         movies: [
           {
             "poster_path": "/zDNAeWU0PxKolEX1D8Vn1qWhGjH.jpg",
