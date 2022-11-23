@@ -76,8 +76,8 @@ export default {
       //
       // Update the modal's content.
       const modalTitle = exampleModal.querySelector('.modal-title')
-
-      modalTitle.textContent = `New message to ${recipient}`
+      const master = this.$store.state.residents[Number(recipient)].name
+      modalTitle.textContent = `${master}의 추천영화`
       this.id = recipient
       console.log(recipient)
 

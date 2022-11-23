@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="addModalLabel">Modal title</h1>
@@ -40,7 +40,8 @@ export default {
       const button = event.relatedTarget
       const recipient = button.getAttribute('data-bs-whatever')
       const modalTitle = exampleModal.querySelector('.modal-title')
-      modalTitle.textContent = `New message to ${recipient}`
+      const master = this.$store.state.residents[Number(recipient)].name
+      modalTitle.textContent = `${master}의 추천영화`
       this.id = recipient
       console.log(this.id)  
     })

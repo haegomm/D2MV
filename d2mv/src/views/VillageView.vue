@@ -1,5 +1,8 @@
 <template>
   <div>
+    <audio autoplay v-if="santa">
+      <source src="@/assets/Santa Tell Me-1-Ariana Grande.mp3" type="audio/mp3">
+    </audio>
     <button @click="getSnow">snow</button>
     <div class="snowflakes" aria-hidden="true" v-if="snowing">
       <div class="snowflake">
@@ -39,9 +42,10 @@
         ❆
       </div>
     </div>
+    
     <div class="container">
-      <img data-bs-whatever="0" data-bs-toggle="modal" data-bs-target="#recommendModal" class="b1" src="../assets/img/5.png" alt="" />
-      <img data-bs-whatever="1" data-bs-toggle="modal" data-bs-target="#recommendModal" class="b2" src="../assets/img/7.png" alt="" />
+      <img id="b1" data-bs-whatever="0" data-bs-toggle="modal" data-bs-target="#recommendModal"  src="../assets/img/5.png" alt="" />
+      <img id="b2" data-bs-whatever="1" data-bs-toggle="modal" data-bs-target="#recommendModal"  src="../assets/img/7.png" alt="" />
       <img id="b3" class="shadow-pop-tr" src="../assets/img/8.png" alt="" />
       <img id="b4" class="shadow-pop-tr" src="../assets/img/9-1.png" alt="" />
       <img id="b5" class="shadow-pop-tr" src="../assets/img/10.png" alt="" />
@@ -68,6 +72,7 @@ export default {
   name: "VillageView",
   data() {
     return{
+      santa: false,
       snowing: false,
       id: null,
     }
@@ -81,6 +86,8 @@ export default {
   methods: {   
     getSnow() {
       this.snowing = !this.snowing
+      this.santa = !this.santa
+
     },
   }
 
@@ -128,12 +135,17 @@ img {
   filter: brightness(1.1);
 }
 
-.b1 {
+#b1 {
   bottom: 14.1vh;
   left: 0;
 }
+img:hover
+{
+  border: solid 5px transparent;
+}
 
-.b2 {
+
+#b2 {
   bottom: 14.1vh;
   left: 10%;
 }
@@ -177,6 +189,7 @@ img {
   bottom: 14.1vh;
   right: 0;
 }
+
 
 img:hover {
   opacity: 1;

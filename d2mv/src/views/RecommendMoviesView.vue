@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="modal fade" id="recommendModal" tabindex="-1" aria-labelledby="recommendModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog modal-xl" >
+        <div class="modal-content bg-secondary bg-opacity-50">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="recommendModalLabel">Modal title</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -70,7 +70,8 @@ export default {
       const button = event.relatedTarget 
       const recipient = button.getAttribute('data-bs-whatever')
       const modalTitle = exampleModal.querySelector('.modal-title')
-      modalTitle.textContent = `New message to ${recipient}`
+      const master = this.$store.state.residents[Number(recipient)].name
+      modalTitle.textContent = `${master}의 추천영화`
       this.id = recipient
       console.log(recipient)
       const passbutton = document.getElementById('passwordButton')
@@ -82,6 +83,6 @@ export default {
 </script>
 
 <style>
-
+ 
 </style>
 
