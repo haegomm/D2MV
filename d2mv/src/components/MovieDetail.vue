@@ -29,6 +29,7 @@
       </div>
     </vue-final-modal>
     <img :src="poster_path" class="card-img-top" alt="" @click="showModal = true">
+    <button @click="showModal = true">More Detail</button>
   </div>
 </template>
 
@@ -48,11 +49,12 @@ export default {
     VueFinalModal
   },
   props: {
-    movie: Object
+    movie: Object,
+    show: Number,
   },
   computed: {
     poster_path() {
-      const baseURL = 'https://image.tmdb.org/t/p/w500'
+      const baseURL = 'https://image.tmdb.org/t/p/origin'
       return baseURL + this.movie.poster_path
     },  
   },

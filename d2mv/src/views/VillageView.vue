@@ -44,8 +44,8 @@
     </div>
     
     <div class="container">
-      <img id="b1" data-bs-whatever="0" data-bs-toggle="modal" data-bs-target="#recommendModal"  src="../assets/img/5.png" alt="" />
-      <img id="b2" data-bs-whatever="1" data-bs-toggle="modal" data-bs-target="#recommendModal"  src="../assets/img/7.png" alt="" />
+      <img id="b1" data-bs-whatever="0" data-bs-toggle="modal" data-bs-target="#recommendModal" src="../assets/img/5.png" alt="" />
+      <img id="b2" data-bs-whatever="1" data-bs-toggle="modal" data-bs-target="#recommendModal" src="../assets/img/7.png" alt="" />
       <img id="b3" class="shadow-pop-tr" src="../assets/img/8.png" alt="" />
       <img id="b4" class="shadow-pop-tr" src="../assets/img/9-1.png" alt="" />
       <img id="b5" class="shadow-pop-tr" src="../assets/img/10.png" alt="" />
@@ -144,7 +144,6 @@ img:hover
   border: solid 5px transparent;
 }
 
-
 #b2 {
   bottom: 14.1vh;
   left: 10%;
@@ -182,7 +181,7 @@ img:hover
 
 #b9 {
   bottom: 14.1vh;
-  left: 76.5%;
+  left: 76.6%;
 }
 
 #b10 {
