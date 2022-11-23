@@ -8,9 +8,6 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <nav>
-              <router-link :to="{name: 'village'}">마을로 돌아가기</router-link>
-            </nav>
             <h1>Recommended Movies</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <MovieCardView
@@ -19,7 +16,6 @@
                 :movie="movie"
               />
             </div>
-            <button @click="goPass">Add Movie</button>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

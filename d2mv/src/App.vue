@@ -1,5 +1,6 @@
 <template>
   <div id="app" >
+    <img src="@/assets/배경6.jpg" alt="" id="bg">
     <nav>
       <a href="#">Home</a>
       <a href="#">Movies</a>
@@ -11,6 +12,15 @@
 </template>
 
 <style scoped>
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 
 
 #app {
@@ -34,18 +44,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
-.background {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-image: url("./assets/배경6.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(1.1);
-}
+
 
 footer {
   width: 100%;

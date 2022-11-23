@@ -186,7 +186,7 @@ img:hover {
   color: #fff;
   font-size: 1em;
   font-family: Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
+  text-shadow: 0 0 5px rgb(233, 225, 225);
 }
 
 

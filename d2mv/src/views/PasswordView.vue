@@ -11,6 +11,7 @@
             <h1>비밀번호 입력해주세요</h1>
             <input type="text" v-model="password">
             <button id="important_button" @click="confirm">제출하기</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recommendModal" :data-bs-whatever="id">뒤로가기</button>
           </div>
           <div class="modal-footer">
           </div>
