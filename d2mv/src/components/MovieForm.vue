@@ -1,16 +1,22 @@
 <template>
-  <div>
+  <div class="topdiv">
     <div>
       <form @submit.prevent="searchMovie">
-        <input type="text" v-model.trim="addmovietitle" />
-        <button @click="searchMovie">검색</button>
+        <div class="search jello-horizontal" style="display: inline-block">
+          <input type="text" v-model.trim="addmovietitle" />
+          <button class="search jello-horizontal" @click="searchMovie">
+            &#128064;
+          </button>
+        </div>
       </form>
     </div>
+    <div class="cards_list">
       <MovieFormItem
         v-for="(result, index) in results"
         :key="index"
         :result="result"
       />
+    </div>
     <br />
     <button @click="AddToMovies">Add</button>
   </div>
@@ -32,7 +38,7 @@ export default {
     };
   },
   props: {
-    id: String
+    id: String,
   },
   methods: {
     searchMovie() {
@@ -59,7 +65,7 @@ export default {
       }
     },
     AddToMovies() {
-      console.log(2)
+      console.log(2);
       this.$store.dispatch("AddToMovies", this.id);
     },
   },
@@ -67,6 +73,50 @@ export default {
 </script>
 
 <style>
+@-webkit-keyframes jello-horizontal {
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
 
+.topdiv {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cards_list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(7, 3, 31);
+}
+
+.search {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 50px;
+}
 </style>
