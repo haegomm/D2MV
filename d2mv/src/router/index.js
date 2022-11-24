@@ -9,7 +9,7 @@ import Top20MovieView from '../views/Top20MovieView.vue'
 import MoviesView from '../views/MoviesView.vue'
 import PopularMoviesView from '../views/PopularMoviesView.vue'
 import NowPlayingMoviesView from '../views/NowPlayingMoviesView.vue'
-import LatestMoviesView from '../views/LatestMoviesView.vue'
+// import LatestMoviesView from '../views/LatestMoviesView.vue'
 
 
 
@@ -61,11 +61,11 @@ const routes = [
     name: 'nowplaying',
     component: NowPlayingMoviesView
   },
-  {
-    path: '/latest',
-    name: 'latest',
-    component: LatestMoviesView
-  },
+  // {
+  //   path: '/latest',
+  //   name: 'latest',
+  //   component: LatestMoviesView
+  // },
 
 ]
 
