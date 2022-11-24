@@ -9,7 +9,7 @@
     </audio>
     <nav style="position: fixed; right: 5%">
       <button @click="goToHome">HOME</button> |
-      <button class="router-link" @click="goToTop20">TOP20</button> |
+      <!-- <button class="router-link" @click="goToTop20">MOVIES</button> | -->
       <button @click="getSnow">SNOW❅</button>
     </nav>
 

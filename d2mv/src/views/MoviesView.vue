@@ -1,36 +1,54 @@
 <template>
-  <div>
+  <div class="movies">
     <h1>Top Rated Movies</h1>
-    <div v-for="movie in getTopRatedMovies" :key="`toprated-${movie.id}`">
-      <div>{{ movie?.title }}</div>
-      <div v-if="movie">
-        <img
-          :src="`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`"
-          alt=""
-        />
-      </div>
-    </div>
-    <div>
-      <h1>Now Playing Movies</h1>
-      <div v-for="movie in getNowPlayingMovies" :key="`nowplaying-${movie.id}`">
+    <div
+      v-for="movie in getTopRatedMovies"
+      :key="`toprated-${movie.id}`"
+      class="movielist"
+    >
+      <div class="movi">
         <div>{{ movie?.title }}</div>
         <div v-if="movie">
           <img
-            :src="`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`"
+            :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
             alt=""
           />
         </div>
       </div>
     </div>
-    <div>
+    <div class="now">
+      <h1>Now Playing Movies</h1>
+      <div
+        v-for="movie in getNowPlayingMovies"
+        :key="`nowplaying-${movie.id}`"
+        class="movielist"
+      >
+        <div class="movi">
+          <div>{{ movie?.title }}</div>
+          <div v-if="movie">
+            <img
+              :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upcoming">
       <h1>Upcoming Movies</h1>
-      <div v-for="movie in getUpComingMovies" :key="`upcoming-${movie.id}`">
-        <div>{{ movie?.title }}</div>
-        <div v-if="movie">
-          <img
-            :src="`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`"
-            alt=""
-          />
+      <div
+        v-for="movie in getUpComingMovies"
+        :key="`upcoming-${movie.id}`"
+        class="movielist"
+      >
+        <div class="movi">
+          <div>{{ movie?.title }}</div>
+          <div v-if="movie">
+            <img
+              :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -118,6 +136,16 @@ export default {
 </script>
 
 <style>
+.movies {
+  display: block;
+}
+
+.movielist {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
 .top20movies {
   z-index: 999;
 }
