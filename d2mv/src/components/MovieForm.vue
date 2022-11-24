@@ -1,13 +1,15 @@
 <template>
   <div class="topdiv">
-      <form @submit.prevent="searchMovie">
-        <div class="" style="display: inline-block">
-          <input type="text" v-model.trim="addmovietitle" style="backgound: none; border:0 solid black; border-radius: 10px;"/>
-          <button class="search jello-horizontal " @click="searchMovie">
-            👀
-          </button>
-        </div>
-      </form>
+    <form @submit.prevent="searchMovie">
+      <div class="" style="display: inline-block">
+        <input
+          type="text"
+          v-model.trim="addmovietitle"
+          style="backgound: none; border: 0 solid black; border-radius: 10px"
+        />
+        <button class="search jello-horizontal" @click="searchMovie">👀</button>
+      </div>
+    </form>
     <div class="cards_list">
       <MovieFormItem
         v-for="(result, index) in results"
@@ -16,7 +18,16 @@
       />
     </div>
     <br />
-    <button @click="AddToMovies" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recommendModal" :data-bs-whatever="id">Add</button>
+    <button
+      @click="AddToMovies"
+      type="button"
+      class="addbtn"
+      data-bs-toggle="modal"
+      data-bs-target="#recommendModal"
+      :data-bs-whatever="id"
+    >
+      🎥
+    </button>
   </div>
 </template>
 
@@ -60,21 +71,21 @@ export default {
           .catch((error) => {
             console.log(error);
           });
-        this.addmovietitle = null
+        this.addmovietitle = null;
       }
     },
     AddToMovies() {
       console.log(2);
       this.$store.dispatch("AddToMovies", this.id);
-      this.results = null
+      this.results = null;
     },
   },
 };
 </script>
 
 <style scoped>
-.jello-horizontal:hover{
-	animation: jello-horizontal 0.9s both;
+.jello-horizontal:hover {
+  animation: jello-horizontal 0.9s both;
 }
 
 @keyframes jello-horizontal {
@@ -101,6 +112,11 @@ export default {
   }
 }
 
+.addbtn {
+  background: none;
+  border: none;
+  font-size: 45px;
+}
 
 .cards_list {
   z-index: 0;

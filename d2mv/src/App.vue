@@ -1,16 +1,16 @@
 <template>
-  <div id="app" >
-    <img src="@/assets/배경6.jpg" alt="" id="bg">
+  <div id="app">
+    <img src="@/assets/배경6.jpg" alt="" id="bg" />
     <audio autoplay v-if="santa">
       <source
         src="@/assets/Santa Tell Me-1-Ariana Grande.mp3"
         type="audio/mp3"
       />
     </audio>
-    <nav style="position:fixed; right:5%">
+    <nav style="position: fixed; right: 5%">
       <button @click="goToHome">HOME</button> |
       <button class="router-link" @click="goToTop20">TOP20</button> |
-      <button @click="getSnow">SNOW❅</button> 
+      <button @click="getSnow">SNOW❅</button>
     </nav>
 
     <div class="snowflakes" aria-hidden="true" v-if="snowing">
@@ -50,7 +50,7 @@ export default {
     return {
       snowing: false,
       santa: false,
-    }
+    };
   },
   methods: {
     getSnow() {
@@ -58,16 +58,32 @@ export default {
       this.santa = !this.santa;
     },
     goToTop20() {
-      this.$router.push({ name: 'top20' })
+      this.$router.push({ name: "top20" });
     },
     goToHome() {
-      this.$router.push({ name: 'village' })
-    }
+      this.$router.push({ name: "village" });
+    },
   },
-}
+};
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "NotoSansEN";
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap")
+    format("woff");
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  /* unicode-range: U+AC00-D7A3; */
+}
 
 button {
   /* position: absolute; */
@@ -76,7 +92,8 @@ button {
   /* left: 2%; */
   color: aliceblue;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 300;
 }
 .snowflake {
   color: #fff;
@@ -263,18 +280,16 @@ button {
   animation-delay: 4s, 2.5s;
 }
 
-
 #bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
   z-index: -10;
 }
-
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -286,18 +301,19 @@ button {
 
 nav {
   padding: 30px;
+  font-family: "Marcellus SC", serif;
+  font-weight: revert;
+  font-size: x-large;
 }
 
-nav a {
+/* nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
-
-
+} */
 
 footer {
   width: 100%;

@@ -10,36 +10,17 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content" style="background-color: rgb(133 178 211)">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" style=" font-weight: revert;
-  font-size: x-large;" id="addModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h1
+              class="modal-title"
+              style="font-weight: revert; font-size: x-large"
+              id="addModalLabel"
+            >
+              Modal title
+            </h1>
           </div>
           <div class="modal-body">
             <!-- <h1>추천 영화 추가하기</h1> -->
             <MovieForm :id="id" />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <!-- <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#recommendModal"
-              :data-bs-whatever="id"
-            >
-              add를 누른후 누르세요
-            </button> -->
           </div>
         </div>
       </div>
@@ -78,6 +59,22 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 
+@font-face {
+  font-family: "Marcellus SC";
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap")
+    format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+AC00-D7A3;
+}
+
 .modal-dialog {
   position: relative;
   display: flex;
@@ -90,7 +87,6 @@ export default {
 
 .modal-body {
   overflow: auto;
-  
 }
 
 .modal-content {
@@ -108,12 +104,11 @@ export default {
   padding-bottom: 0;
 }
 
-
-
 .modal-title {
-  font-family: "Marcellus SC", serif;
+  padding: 10px;
+  font-family: "Marcellus SC", "SpoqaHanSansNeo-Regular";
   font-weight: revert;
   font-size: x-large;
+  justify-content: center;
 }
-
 </style>

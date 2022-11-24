@@ -10,11 +10,13 @@
       <div class="modal-dialog modal-xl">
         <div
           class="modal-content bg-opacity-50"
-          style="background-color:  rgb(133 178 211)"
+          style="background-color: rgb(133 178 211)"
         >
           <div class="modal-body">
-            <h1 class="modal-title" id="recommendModalLabel">Modal title</h1>
-            <div class="cardlist">
+            <div class="card-title">
+              <h1 class="modal-title" id="recommendModalLabel">Modal title</h1>
+            </div>
+            <div class="card-body">
               <MovieCardView
                 v-for="movie in getList"
                 :key="movie.id"
@@ -29,6 +31,7 @@
                 class="learn-more"
                 data-bs-toggle="modal"
                 data-bs-target="#passwordModal"
+                style="padding: 3px"
               >
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
@@ -36,22 +39,6 @@
                 <span class="button-text">ADD</span>
               </button>
             </div>
-            <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-            <!-- <button
-              id="passwordButton"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#passwordModal"
-            >
-              Add
-            </button> -->
           </div>
         </div>
       </div>
@@ -114,6 +101,22 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 
+@font-face {
+  font-family: "Marcellus SC";
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap")
+    format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+AC00-D7A3;
+}
+
 .modal-dialog {
   position: relative;
   display: flex;
@@ -138,33 +141,42 @@ export default {
 }
 
 .modal-title {
-  font-family: "Marcellus SC", serif;
+  font-family: "Marcellus SC", "SpoqaHanSansNeo-Regular";
   font-weight: revert;
   font-size: x-large;
 }
 
 .modal-body {
   position: relative;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  display: grid;
+  flex-wrap: wrap;
   place-items: center;
   border: none;
+  overflow: auto;
+}
+
+.card-title {
+  margin: 10px;
+}
+
+.card-body {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, minmax(240px, 290px));
+  grid-template-rows: 1;
+  justify-content: center;
+  -ms-overflow-style: none;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-footer {
   border: none;
-}
-
-.cardlist {
-  display: flex;
-  grid-gap: 1rem;
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0;
-  grid-template-columns: repeat(auto-fill, minmax(auto, auto));
-  grid-template-rows: 1;
+  padding: 0;
 }
 
 .card {

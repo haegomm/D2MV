@@ -4,9 +4,9 @@
       v-model="showModal"
       classes="modal-container"
       content-class="modal-content"
-      style="margin: 0; padding: 0;"
+      style="margin: 0; padding: 0"
     >
-      <div class="modal__content" style="background-color: rgb(133 178 211)">
+      <div class="modal__content" style="background: rgb(133 178 211)">
         <div>
           <div>
             <img :src="poster_path" alt="" />
@@ -16,15 +16,19 @@
           <h1>&nbsp;&nbsp;&nbsp;</h1>
         </div>
         <div>
-          <span class="modal__title">{{ movie.title }}</span>
+          <span
+            class="modal__title"
+            style="font-family: 'SpoqaHanSansNeo-Regular'"
+            >{{ movie.title }}</span
+          >
           <br />
           <br />
-          <p>시놉시스</p>
           <div>
-            <p>{{ movie.overview }}</p>
+            <p style="font-family: 'SpoqaHanSansNeo-Regular'">
+              {{ movie.overview }}
+            </p>
           </div>
           <br />
-          <p>트레일러</p>
           <div id="area">
             <iframe
               :src="youTubeURL"
@@ -92,6 +96,22 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Marcellus SC";
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap")
+    format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+AC00-D7A3;
+}
+
 ::v-deep .modal-container {
   display: flex;
   justify-content: center;
@@ -112,6 +132,7 @@ export default {
   font-weight: 700;
 }
 .modal__content {
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-grow: 1;

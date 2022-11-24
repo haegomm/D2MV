@@ -1,10 +1,10 @@
 <template>
   <div class="card">
     <div class="card_image">
-      <img :src="imgUrl" @click="addChoice"/>
+      <img :src="imgUrl" @click="addChoice" />
     </div>
     <div class="card_title title-white">
-			<p>{{ result.title }}</p>
+      <p>{{ result.title }}</p>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     addChoice() {
-      console.log(1)
+      console.log(1);
       // this.choice = !this.choice;
       // const choicemovie = {
       //   movie: this.result,
@@ -53,8 +53,10 @@ export default {
   width: 300px;
   height: 300px;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
+  border: none;
   background: none;
   transition: 0.4s;
 }
@@ -63,6 +65,7 @@ export default {
   width: inherit;
   height: inherit;
   border-radius: 40px;
+  object-fit: cover;
 }
 
 .card .card_image img {
@@ -85,8 +88,8 @@ export default {
 
 .card:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 .card_image:hover + .card_title {
@@ -111,5 +114,4 @@ export default {
     flex-direction: column;
   }
 }
-
 </style>

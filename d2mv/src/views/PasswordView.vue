@@ -14,23 +14,22 @@
               <h4 style="font-weight: revert; font-size: x-large">PASSWORD</h4>
             </div>
             <div class="passwordhint">
-              <p class="fa-solid fa-key">SSAFY 8기 대전2반 교수님의 성함은? OOO교수님</p>
+              <p class="fa-solid fa-key">SSAFY 8기 대전2반 교수님의 성함은?</p>
             </div>
-            <div class="passwordinput">
-              <input type="password" v-model="password" />
+            <div class="passwordinput" style="left: 2%">
+              <input
+                type="password"
+                v-model="password"
+                style="
+                  backgound: none;
+                  border: 0 solid black;
+                  border-radius: 10px;
+                "
+                @keyup.enter="confirm"
+              />
               <button id="important_button" @click="confirm">🔒</button>
             </div>
-            <!-- <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#recommendModal"
-              :data-bs-whatever="id"
-            >
-              뒤로가기
-            </button> -->
           </div>
-          <!-- <div class="modal-footer"></div> -->
         </div>
       </div>
     </div>
@@ -85,7 +84,7 @@ export default {
       const button = event.relatedTarget;
       // Extract info from data-bs-* attributes
       const recipient = button.getAttribute("data-bs-whatever");
-      console.log(recipient)
+      console.log(recipient);
       // If necessary, you could initiate an AJAX request here
       // and then do the updating in a callback.
       //
@@ -145,7 +144,7 @@ h4 {
 
 #important_button {
   border: none;
-  background-color: none;
+  background: none;
 }
 
 .passwordinput {
