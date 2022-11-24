@@ -31,7 +31,7 @@
             >
               Close
             </button>
-            <button
+            <!-- <button
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
@@ -39,7 +39,7 @@
               :data-bs-whatever="id"
             >
               add를 누른후 누르세요
-            </button>
+            </button> -->
           </div>
         </div>
       </div>

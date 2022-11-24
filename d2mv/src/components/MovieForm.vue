@@ -16,7 +16,7 @@
       />
     </div>
     <br />
-    <button @click="AddToMovies">Add</button>
+    <button @click="AddToMovies" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recommendModal" :data-bs-whatever="id">Add</button>
   </div>
 </template>
 
@@ -66,6 +66,7 @@ export default {
     AddToMovies() {
       console.log(2);
       this.$store.dispatch("AddToMovies", this.id);
+      this.results = null
     },
   },
 };
