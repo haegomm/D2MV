@@ -14,7 +14,7 @@ export default new Vuex.Store({
       {
         id: '0',
         name: 'leegaeun',
-        password: '1234',
+        password: '김영주',
         movies: [
           {
             "poster_path": "/oAt6OtpwYCdJI76AVtVKW1eorYx.jpg",
@@ -59,7 +59,7 @@ export default new Vuex.Store({
       {
         id: '1',
         name: 'songdaehyun',
-        password: '4321',
+        password: '김영주',
         movies: [
           {
             "poster_path": "/zDNAeWU0PxKolEX1D8Vn1qWhGjH.jpg",
@@ -281,7 +281,8 @@ export default new Vuex.Store({
       // }
       // context.commit('ADD_TO_MOVIES', recommendMovie)
       context.commit('ADD_TO_MOVIES', personId)
-    }
+    },
+
   },
   modules: {
   }
