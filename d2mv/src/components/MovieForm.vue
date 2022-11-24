@@ -60,6 +60,7 @@ export default {
           .catch((error) => {
             console.log(error);
           });
+        this.addmovietitle = null
       }
     },
     AddToMovies() {
