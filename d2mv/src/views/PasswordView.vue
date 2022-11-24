@@ -17,7 +17,7 @@
               <p class="fa-solid fa-key">우리 기수</p>
               <p class="fa-solid fa-key">우리 기수</p>
             </div>
-            <input type="text" v-model="password" />
+            <input type="password" v-model="password" />
             <button id="important_button" @click="confirm">🔒</button>
             <!-- <button
               type="button"
@@ -84,13 +84,14 @@ export default {
       const button = event.relatedTarget;
       // Extract info from data-bs-* attributes
       const recipient = button.getAttribute("data-bs-whatever");
+      console.log(recipient)
       // If necessary, you could initiate an AJAX request here
       // and then do the updating in a callback.
       //
       // Update the modal's content.
-      const modalTitle = exampleModal.querySelector(".modal-title");
-      const master = this.$store.state.residents[Number(recipient)].name;
-      modalTitle.textContent = `${master}의 추천영화`;
+      // const modalTitle = exampleModal.querySelector(".modal-title");
+      // const master = this.$store.state.residents[Number(recipient)].name;
+      // modalTitle.textContent = `${master}의 추천영화`;
       this.id = recipient;
       console.log(recipient);
 

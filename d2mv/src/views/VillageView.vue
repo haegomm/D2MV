@@ -39,14 +39,32 @@
         src="../assets/img/7.png"
         alt=""
       />
-      <img id="b3" class="shadow-pop-tr" src="../assets/img/8.png" alt="" />
-      <img id="b4" class="shadow-pop-tr" src="../assets/img/9-1.png" alt="" />
-      <img id="b5" class="shadow-pop-tr" src="../assets/img/10.png" alt="" />
-      <img id="b6" class="shadow-pop-tr" src="../assets/img/11-1.png" alt="" />
-      <img id="b7" class="shadow-pop-tr" src="../assets/img/12-1.png" alt="" />
-      <img id="b8" class="shadow-pop-tr" src="../assets/img/13-1.png" alt="" />
-      <img id="b9" class="shadow-pop-tr" src="../assets/img/14.png" alt="" />
-      <img id="b10" class="shadow-pop-tr" src="../assets/img/15.png" alt="" />
+      <img 
+        id="b3" 
+        data-bs-whatever="2"
+        data-bs-toggle="modal"
+        data-bs-target="#recommendModal" 
+        src="../assets/img/8.png" 
+        alt="" />
+      <img 
+        id="b4"
+        data-bs-whatever="3"
+        data-bs-toggle="modal"
+        data-bs-target="#recommendModal"  
+        src="../assets/img/9-1.png" 
+        alt="" />
+      <img 
+        id="b5"
+        data-bs-whatever="4"
+        data-bs-toggle="modal"
+        data-bs-target="#recommendModal"  
+        src="../assets/img/10.png" 
+        alt="" />
+      <img id="b6"  src="../assets/img/11-1.png" alt="" />
+      <img id="b7"  src="../assets/img/12-1.png" alt="" />
+      <img id="b8"  src="../assets/img/13-1.png" alt="" />
+      <img id="b9"  src="../assets/img/14.png" alt="" />
+      <img id="b10" src="../assets/img/15.png" alt="" />
       <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
     </div>
     <RecommendMoviesView />

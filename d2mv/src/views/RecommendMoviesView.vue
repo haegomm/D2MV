@@ -25,6 +25,7 @@
           <div class="modal-footer">
             <div id="container">
               <button
+                id="passwordButton"
                 class="learn-more"
                 data-bs-toggle="modal"
                 data-bs-target="#passwordModal"
@@ -65,7 +66,7 @@ export default {
   name: "RecommendMoviesView",
   data() {
     return {
-      id: "0",
+      id: "3",
       showModal: false,
     };
   },
