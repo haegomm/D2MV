@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="movie in getMovies" :key="movie.id">
-      <div>{{ movie.title }}</div>
+      <div>{{ movie?.title }}</div>
       <div v-if="movie">
       <img
         :src="`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`"
@@ -19,7 +19,7 @@ const TMDB_KEY = '#'
 const TMDB_URL = 'https://api.themoviedb.org/3/movie'
 
 export default {
-  name: 'Top20MovieView',
+  name: 'TopRatedMovieView',
   data() {
     return {
       movies: [],
@@ -33,10 +33,10 @@ export default {
     }
   },
   methods: {
-    getTop20Movies() {
+    getUpcomingMovies() {
       axios({
         method: 'get',
-        url: `${TMDB_URL}/popular`,
+        url: `${TMDB_URL}/upcoming`,
         params: {
           api_key: TMDB_KEY,
           language: 'ko-KR',
@@ -49,7 +49,7 @@ export default {
     }
   },
   created() {
-    this.getTop20Movies()
+    this.getUpcomingMovies()
   }
 }
 </script>

@@ -19,7 +19,7 @@ const TMDB_KEY = '#'
 const TMDB_URL = 'https://api.themoviedb.org/3/movie'
 
 export default {
-  name: 'Top20MovieView',
+  name: 'nowPlayingMoviesView',
   data() {
     return {
       movies: [],
@@ -33,10 +33,10 @@ export default {
     }
   },
   methods: {
-    getTop20Movies() {
+    nowPlayingMovies() {
       axios({
         method: 'get',
-        url: `${TMDB_URL}/popular`,
+        url: `${TMDB_URL}/now_playing`,
         params: {
           api_key: TMDB_KEY,
           language: 'ko-KR',
@@ -49,7 +49,7 @@ export default {
     }
   },
   created() {
-    this.getTop20Movies()
+    this.nowPlayingMovies()
   }
 }
 </script>
