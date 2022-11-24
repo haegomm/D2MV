@@ -19,7 +19,7 @@ const TMDB_KEY = '#'
 const TMDB_URL = 'https://api.themoviedb.org/3/movie'
 
 export default {
-  name: 'Top20MovieView',
+  name: 'PopularMovieView',
   data() {
     return {
       movies: [],
@@ -33,7 +33,7 @@ export default {
     }
   },
   methods: {
-    getTop20Movies() {
+    getPopularMovies() {
       axios({
         method: 'get',
         url: `${TMDB_URL}/popular`,
@@ -49,7 +49,7 @@ export default {
     }
   },
   created() {
-    this.getTop20Movies()
+    this.getPopularMovies()
   }
 }
 </script>
