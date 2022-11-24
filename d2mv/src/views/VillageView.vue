@@ -1,29 +1,5 @@
 <template>
-  <div>
-    <audio autoplay v-if="santa">
-      <source
-        src="@/assets/Santa Tell Me-1-Ariana Grande.mp3"
-        type="audio/mp3"
-      />
-    </audio>
-    <button @click="getSnow">snow</button>
-    <button class="router-link" @click="goToTop20">TOP20</button>
-
-    <div class="snowflakes" aria-hidden="true" v-if="snowing">
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-    </div>
-
+  <div style="width:3400px">
     <div class="container">
       <img
         id="b1"
@@ -62,16 +38,41 @@
         data-bs-target="#recommendModal"  
         src="../assets/img/10.png" 
         alt="" />
-      <img id="b6"  src="../assets/img/11-1.png" alt="" />
+      <img id="b6"  src="../assets/img/11-1.png" alt=""/>
       <img id="b7"  src="../assets/img/12-1.png" alt="" />
-      <img id="b8"  src="../assets/img/13-1.png" alt="" />
+      <img 
+        id="b8"
+        data-bs-whatever="7"
+        data-bs-toggle="modal"
+        data-bs-target="#recommendModal"   
+        src="../assets/img/13-1.png" 
+        alt="" />
       <img id="b9"  src="../assets/img/14.png" alt="" />
       <img id="b10" src="../assets/img/15.png" alt="" />
       <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
+      <img id="b11"  src="../assets/img/11-1.png" alt=""/>
+      <img id="b12"  src="../assets/img/12-1.png" alt="" />
+      <img id="b13"  src="../assets/img/11-1.png" alt=""/>
+      
+      <img id="b15"  src="../assets/img/7.png" alt=""/>
+      <img id="b16"  src="../assets/img/12-1.png" alt="" />
+      <img id="b17"  src="../assets/img/8.png" alt=""/>
+      <img id="b18"  src="../assets/img/9-1.png" alt="" />
+      <img id="b19"  src="../assets/img/11-1.png" alt=""/>
+      <img id="b20"  src="../assets/img/12-1.png" alt="" />
+      <img id="b21"  src="../assets/img/8.png" alt=""/>
+      <img id="b22"  src="../assets/img/9-1.png" alt="" />
+      <img id="b23"  src="../assets/img/13-1.png" alt=""/>
+      <img id="b24"  src="../assets/img/5.png" alt="" />
     </div>
-    <RecommendMoviesView />
+    <RecommendMoviesView/>
     <PasswordView />
     <AddMovieView />
+    <a href="#b24" style="position: absolute; right:3%; top: 35%;">옆마을 가기</a>
+    <a href="#b1" style="position: absolute; right:-25%; top: 35%;">옆마을 가기</a>
+    <div style="width:1700px;">
+      <a href="#">&nbsp;</a>
+    </div>
   </div>
 </template>
 
@@ -109,19 +110,21 @@ export default {
 </script>
 
 <style scoped>
+
+
 button {
-  position: absolute;
+  /* position: absolute; */
   border: 0;
   outline: 0;
-  left: 2%;
+  /* left: 2%; */
   color: aliceblue;
   background-color: transparent;
-  font-size: 50px;
+  font-size: 25px;
 }
 
-.router-link {
+/* .router-link {
   top: 0%;
-}
+} */
 /* .background {
   height: 100vh;
   width: 100vw;
@@ -202,6 +205,61 @@ img:hover {
 #b10 {
   bottom: 14.1vh;
   right: 0;
+}
+
+#b11 {
+  bottom: 14.1vh;
+  left: 94.6%;
+}
+
+#b12 {
+  bottom: 14.1vh;
+  left: 105.6%;
+}
+#b13 {
+  bottom: 14.1vh;
+  left: 115.6%;
+}
+
+#b15 {
+  bottom: 14.1vh;
+  left: 123.6%;;
+}
+#b16 {
+  bottom: 14.1vh;
+  left: 136.6%;;
+}
+#b17 {
+  bottom: 14.1vh;
+  left: 143.6%;;
+}
+#b18 {
+  bottom: 12.7vh;
+  left: 148.6%;;
+}
+#b19 {
+  bottom: 14.1vh;
+  left: 158.6%;;
+}
+#b20 {
+  bottom: 14.1vh;
+  left: 167.6%;;
+}
+#b21 {
+  bottom: 14.1vh;
+  left: 174.6%;;
+}
+#b22 {
+  bottom: 12.7vh;
+  left: 178.6%;;
+}
+#b23 {
+  bottom: 13.1vh;
+  left: 189.6%;;
+}
+#b24 {
+  bottom: 14.1vh;
+  left: 200.6%;;
 }
 
 img:hover {
