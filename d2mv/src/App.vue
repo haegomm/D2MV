@@ -58,7 +58,7 @@ export default {
       this.santa = !this.santa;
     },
     goToTop20() {
-      this.$router.push({ name: "top20" });
+      this.$router.push({ name: "movies" });
     },
     goToHome() {
       this.$router.push({ name: "village" });
