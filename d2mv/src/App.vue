@@ -2,8 +2,8 @@
   <div id="app" >
     <img src="@/assets/배경6.jpg" alt="" id="bg">
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Movies</a>
+      <a href="#">Home</a> |
+      <a href="#">Movies</a> |
       <a href="#">Recommend</a>
     </nav>
     <footer>(주) 송은희 건설</footer>
@@ -20,6 +20,7 @@
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
+  z-index: -10;
 }
 
 
@@ -53,5 +54,9 @@ footer {
   text-align: center;
   color: white;
   z-index: 1;
+}
+
+.router-link {
+  z-index: 9999;
 }
 </style>

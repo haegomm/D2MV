@@ -7,6 +7,8 @@
       />
     </audio>
     <button @click="getSnow">snow</button>
+    <button class="router-link" @click="goToTop20">TOP20</button>
+
     <div class="snowflakes" aria-hidden="true" v-if="snowing">
       <div class="snowflake">❅</div>
       <div class="snowflake">❆</div>
@@ -99,6 +101,9 @@ export default {
       this.snowing = !this.snowing;
       this.santa = !this.santa;
     },
+    goToTop20() {
+      this.$router.push({ name: 'top20' })
+    }
   },
 };
 </script>
@@ -114,6 +119,9 @@ button {
   font-size: 50px;
 }
 
+.router-link {
+  top: 0%;
+}
 /* .background {
   height: 100vh;
   width: 100vw;

@@ -122,7 +122,8 @@ export default new Vuex.Store({
       // }
       // context.commit('ADD_TO_MOVIES', recommendMovie)
       context.commit('ADD_TO_MOVIES', personId)
-    }
+    },
+
   },
   modules: {
   }
