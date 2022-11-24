@@ -8,17 +8,18 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content" style="background-color: rgb(165 179 189)">
-          <div class="modal-body">
-            <h4 style="font-weight: revert; font-size: x-large">PASSWORD</h4>
-            <div class="passwordhint">
-              <!-- <p class="fa-solid fa-key"></p> -->
-              <p class="fa-solid fa-key">SSAFY 8기 대전2반 교수님의 성함은? OOO교수님</p>
-              <!-- <p class="fa-solid fa-key">우리 기수</p>
-              <p class="fa-solid fa-key">우리 기수</p> -->
+        <div class="modal-content" style="background-color: rgb(133 178 211)">
+          <div class="modal-body d-flex flex-column justify-content-around">
+            <div class="passwordtitle">
+              <h4 style="font-weight: revert; font-size: x-large">PASSWORD</h4>
             </div>
-            <input type="password" v-model="password" />
-            <button id="important_button" @click="confirm">🔒</button>
+            <div class="passwordhint">
+              <p class="fa-solid fa-key">SSAFY 8기 대전2반 교수님의 성함은? OOO교수님</p>
+            </div>
+            <div class="passwordinput">
+              <input type="password" v-model="password" />
+              <button id="important_button" @click="confirm">🔒</button>
+            </div>
             <!-- <button
               type="button"
               class="btn btn-primary"
@@ -102,11 +103,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 .modal-header {
   text-align: center;
   /* background-color: dodgerblue; */
+}
+
+.passwordtitle {
+  margin: 20px;
 }
 
 h4 {
@@ -115,7 +120,9 @@ h4 {
 }
 
 .modal-body {
-  display: inline-block;
+  display: table-column;
+  justify-content: center;
+  position: relative;
   /* background-color: dodgerblue; */
 }
 
@@ -123,10 +130,17 @@ h4 {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 8%;
+  top: 23%;
   max-width: none;
   width: 100%;
   height: 40%;
+}
+
+.modal-content {
+  /* position: relative; */
+  display: flex;
+  width: 50%;
+  height: 100%;
 }
 
 #important_button {
@@ -134,7 +148,7 @@ h4 {
   background-color: none;
 }
 
-.passwordhint {
-  display: inline-block;
+.passwordinput {
+  position: relative;
 }
 </style>

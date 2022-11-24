@@ -67,7 +67,15 @@
       <img id="b8"  src="../assets/img/13-1.png" alt="" />
       <img id="b9"  src="../assets/img/14.png" alt="" />
       <img id="b10" src="../assets/img/15.png" alt="" />
-      <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
+      <img id="l1" src="../assets/img/1-1.png" alt="" />
+      <img id="t2" src="../assets/img/20.png" alt="" />
+      <img id="l2" src="../assets/img/2.png" alt="" />
+      <!-- <img id="l3" src="../assets/img/3.png" alt="" /> -->
+      <!-- <img id="l4" src="../assets/img/4.png" alt="" /> -->
+      <img id="l5" src="../assets/img/4.png" alt="" />
+      <img id="t1" src="../assets/img/18.png" alt="" />
+      <img id="l6" src="../assets/img/2.png" alt="" />
+      <img id="l7" src="../assets/img/4.png" alt="" />
     </div>
     <RecommendMoviesView />
     <PasswordView />
@@ -204,7 +212,56 @@ img:hover {
   right: 0;
 }
 
-img:hover {
+#l1 {
+  bottom: 8.7vh;
+  width: 1920px;
+  left: 0%;
+}
+
+#l2 {
+  bottom: 14.1vh;
+  left: 15%;
+}
+
+#l3 {
+  bottom: 14.1vh;
+  left: 50%;
+}
+
+#l4 {
+  bottom: 13.5vh;
+  height: 302px;
+  left: 44.2%;
+}
+
+#l5 {
+  bottom: 13.5vh;
+  height: 302px;
+  left: 11.1%;
+}
+
+#t1 {
+  bottom: 12.1vh;
+  left: 73%;
+}
+
+#l6 {
+  bottom: 14.1vh;
+  left: 70%;
+}
+
+#l7 {
+  bottom: 13.5vh;
+  height: 302px;
+  left: 66.1%;
+}
+
+#t2 {
+  bottom: 13.8vh;
+  left: 21%;
+}
+
+#b:hover {
   opacity: 1;
 }
 

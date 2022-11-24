@@ -47,13 +47,13 @@ export default new Vuex.Store({
       },
       {
         id: '5',
-        name: '?',
+        name: '',
         password: null,
         movies: []
       },
       {
         id: '6',
-        name: '?',
+        name: '김경아',
         password: null,
         movies: []
       },

@@ -4,8 +4,9 @@
       v-model="showModal"
       classes="modal-container"
       content-class="modal-content"
+      style="margin: 0; padding: 0;"
     >
-      <div class="modal__content">
+      <div class="modal__content" style="background-color: rgb(133 178 211)">
         <div>
           <div>
             <img :src="poster_path" alt="" />
@@ -90,8 +91,6 @@ export default {
 };
 </script>
 
-<style>
-</style>
 <style scoped>
 ::v-deep .modal-container {
   display: flex;
@@ -131,9 +130,7 @@ export default {
   width: 100%;
   height: 100%;
 }
-</style>
 
-<style scoped>
 .dark-mode div::v-deep .modal-content {
   border-color: #2d3748;
   background-color: #1a202c;

@@ -1,15 +1,13 @@
 <template>
   <div class="topdiv">
-    <div>
       <form @submit.prevent="searchMovie">
-        <div class="search jello-horizontal" style="display: inline-block">
-          <input type="text" v-model.trim="addmovietitle" />
-          <button class="search jello-horizontal" @click="searchMovie">
-            &#128064;
+        <div class="" style="display: inline-block">
+          <input type="text" v-model.trim="addmovietitle" style="backgound: none; border:0 solid black; border-radius: 10px;"/>
+          <button class="search jello-horizontal " @click="searchMovie">
+            👀
           </button>
         </div>
       </form>
-    </div>
     <div class="cards_list">
       <MovieFormItem
         v-for="(result, index) in results"
@@ -52,7 +50,7 @@ export default {
           params: {
             api_key: API_KEY,
             query: this.addmovietitle,
-            language: "ko",
+            language: "en",
           },
         })
           .then((responese) => {
@@ -72,29 +70,35 @@ export default {
 };
 </script>
 
-<style>
-@-webkit-keyframes jello-horizontal {
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+<style scoped>
+.jello-horizontal:hover{
+	animation: jello-horizontal 0.9s both;
 }
+
 @keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
 
-.jello-horizontal:hover {
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
-}
-
-.topdiv {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .cards_list {
   z-index: 0;

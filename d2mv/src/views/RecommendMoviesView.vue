@@ -10,7 +10,7 @@
       <div class="modal-dialog modal-xl">
         <div
           class="modal-content bg-opacity-50"
-          style="background-color: rgb(165 179 189)"
+          style="background-color:  rgb(133 178 211)"
         >
           <div class="modal-body">
             <h1 class="modal-title" id="recommendModalLabel">Modal title</h1>
@@ -113,12 +113,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
-/* @font-face {
-  font-family: "Gaegu", cursive;
-  src: url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap")
-    format("woff");
-  font-style: normal;
-} */
 
 .modal-dialog {
   position: relative;
@@ -218,10 +212,12 @@ button {
   font-size: inherit;
   font-family: inherit;
 }
+
 button.learn-more {
   width: 12rem;
   height: auto;
 }
+
 button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -232,6 +228,7 @@ button.learn-more .circle {
   background: #282936;
   border-radius: 1.625rem;
 }
+
 button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -240,6 +237,7 @@ button.learn-more .circle .icon {
   margin: auto;
   background: #fff;
 }
+
 button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
@@ -247,6 +245,7 @@ button.learn-more .circle .icon.arrow {
   height: 0.125rem;
   background: none;
 }
+
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -258,6 +257,7 @@ button.learn-more .circle .icon.arrow::before {
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
 }
+
 button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -273,13 +273,16 @@ button.learn-more .button-text {
   text-align: center;
   text-transform: uppercase;
 }
+
 button:hover .circle {
   width: 100%;
 }
+
 button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
+
 button:hover .button-text {
   color: #fff;
 }

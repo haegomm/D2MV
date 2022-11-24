@@ -8,9 +8,10 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: rgb(133 178 211)">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="addModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" style=" font-weight: revert;
+  font-size: x-large;" id="addModalLabel">Modal title</h1>
             <button
               type="button"
               class="btn-close"
@@ -66,7 +67,7 @@ export default {
       const recipient = button.getAttribute("data-bs-whatever");
       const modalTitle = exampleModal.querySelector(".modal-title");
       const master = this.$store.state.residents[Number(recipient)].name;
-      modalTitle.textContent = `${master}의 추천영화`;
+      modalTitle.textContent = `ADD TO ${master}'S MOVIES`;
       this.id = recipient;
       console.log(this.id);
     });
@@ -74,5 +75,45 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+
+.modal-dialog {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 15%;
+  max-width: none;
+  width: 100%;
+  height: 60%;
+}
+
+.modal-body {
+  overflow: auto;
+  
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  scrollbar-width: none;
+  /* overflow: auto; */
+}
+
+.modal-header {
+  border: none;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+
+
+.modal-title {
+  font-family: "Marcellus SC", serif;
+  font-weight: revert;
+  font-size: x-large;
+}
+
 </style>

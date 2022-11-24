@@ -4,7 +4,7 @@
     <div class="card-body" style="padding: 0">
       <!-- <img :src="poster_path" class="card-img-top" alt=""> -->
       <!-- <h5 class="card-title">{{ movie.title}}</h5> -->
-      <MovieDetail :movie="movie"/>
+      <MovieDetail :movie="movie" style="background-color: rgb(133 178 211)"/>
     </div>
   </div>
 </template>
