@@ -49,36 +49,30 @@
         alt="" />
       <img id="b9"  src="../assets/img/14.png" alt="" />
       <img id="b10" src="../assets/img/15.png" alt="" />
-      <img id="l1" src="../assets/img/1-1.png" alt="" />
       <img id="t2" src="../assets/img/20.png" alt="" />
       <img id="l2" src="../assets/img/2.png" alt="" />
-      <!-- <img id="l3" src="../assets/img/3.png" alt="" /> -->
-      <!-- <img id="l4" src="../assets/img/4.png" alt="" /> -->
       <img id="l5" src="../assets/img/4.png" alt="" />
       <img id="t1" src="../assets/img/18.png" alt="" />
       <img id="l6" src="../assets/img/2.png" alt="" />
       <img id="l7" src="../assets/img/4.png" alt="" />
-      <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
       <img id="b11"  src="../assets/img/11-1.png" alt=""/>
       <img id="b12"  src="../assets/img/12-1.png" alt="" />
-      <img id="b13"  src="../assets/img/11-1.png" alt=""/>
-      
+      <img id="b13"  src="../assets/img/9-1.png" alt=""/>
       <img id="b15"  src="../assets/img/7.png" alt=""/>
-      <img id="b16"  src="../assets/img/12-1.png" alt="" />
+      <img id="b16"  src="../assets/img/10.png" alt="" />
       <img id="b17"  src="../assets/img/8.png" alt=""/>
       <img id="b18"  src="../assets/img/9-1.png" alt="" />
       <img id="b19"  src="../assets/img/11-1.png" alt=""/>
       <img id="b20"  src="../assets/img/12-1.png" alt="" />
-      <img id="b21"  src="../assets/img/8.png" alt=""/>
-      <img id="b22"  src="../assets/img/9-1.png" alt="" />
-      <img id="b23"  src="../assets/img/13-1.png" alt=""/>
-      <img id="b24"  src="../assets/img/5.png" alt="" />
+      <!-- <img id="b21"  src="../assets/img/8.png" alt=""/> -->
+      <img id="b22"  src="../assets/img/7.png" alt="" />
+      <img id="b23"  src="../assets/img/13-2.png" alt=""/>
     </div>
     <RecommendMoviesView/>
     <PasswordView />
     <AddMovieView />
-    <a href="#b24" style="position: absolute; right:3%; top: 35%;">옆마을 가기</a>
-    <a href="#b1" style="position: absolute; right:-25%; top: 35%;">옆마을 가기</a>
+    <a href="#b23" style="position: absolute; right:3%; top: 35%; text-decoration: none; color: azure; ">옆마을 가기 &#9755;</a>
+    <a href="#b1" style="position: absolute; right:-9%; top: 35%; text-decoration: none; color: azure; ">옆마을 가기 &#9754;</a>
     <div style="width:1700px;">
       <a href="#">&nbsp;</a>
     </div>
@@ -122,40 +116,12 @@ export default {
 
 
 button {
-  /* position: absolute; */
   border: 0;
   outline: 0;
-  /* left: 2%; */
   color: aliceblue;
   background-color: transparent;
   font-size: 25px;
 }
-
-/* .router-link {
-  top: 0%;
-} */
-/* .background {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/배경6.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(1.1);
-} */
-
-/* .container {
-  position: relative;
-  top: 41vh;
-  width: 100%;
-  height: 45vh;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-} */
 
 img {
   display: inline-block;
@@ -164,7 +130,7 @@ img {
 }
 
 #b1 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 0;
 }
 img:hover {
@@ -172,32 +138,32 @@ img:hover {
 }
 
 #b2 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 10%;
 }
 
 #b3 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 22%;
 }
 
 #b4 {
-  bottom: 12.7vh;
+  bottom: 12.5vh;
   left: 30%;
 }
 
 #b5 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 40%;
 }
 
 #b6 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 47.2%;
 }
 
 #b7 {
-  bottom: 13.95vh;
+  bottom: 13.75vh;
   left: 58%;
 }
 
@@ -207,113 +173,113 @@ img:hover {
 }
 
 #b9 {
-  bottom: 14.1vh;
+  bottom: 13.78vh;
   left: 76.6%;
 }
 
 #b10 {
-  bottom: 14.1vh;
+  bottom: 13.8vh;
   right: 0;
 }
 
 #l1 {
-  bottom: 8.7vh;
+  bottom: 8.3vh;
   width: 1920px;
   left: 0%;
 }
 
 #l2 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 15%;
 }
 
 #l3 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 50%;
 }
 
 #l4 {
-  bottom: 13.5vh;
+  bottom: 13.3vh;
   height: 302px;
   left: 44.2%;
 }
 
 #l5 {
-  bottom: 13.5vh;
+  bottom: 13.25vh;
   height: 302px;
   left: 11.1%;
 }
 
 #t1 {
-  bottom: 12.1vh;
+  bottom: 11.9vh;
   left: 73%;
 }
 
 #l6 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 70%;
 }
 
 #l7 {
-  bottom: 13.5vh;
+  bottom: 13.2vh;
   height: 302px;
   left: 66.1%;
 }
 
 #t2 {
-  bottom: 13.8vh;
+  bottom: 13.5vh;
   left: 21%;
 }
 
 #b11 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 94.6%;
 }
 
 #b12 {
-  bottom: 14.1vh;
+  bottom: 13.7vh;
   left: 105.6%;
 }
 #b13 {
-  bottom: 14.1vh;
-  left: 115.6%;
+  bottom: 12.5vh;
+  left: 113.3%;
 }
 
 #b15 {
-  bottom: 14.1vh;
+  bottom: 13.9vh;
   left: 123.6%;;
 }
 #b16 {
-  bottom: 14.1vh;
-  left: 136.6%;;
+  bottom: 13.7vh;
+  left: 135.7%;;
 }
 #b17 {
-  bottom: 14.1vh;
-  left: 143.6%;;
+  bottom: 13.7vh;
+  left: 142.1%;;
 }
 #b18 {
-  bottom: 12.7vh;
-  left: 148.6%;;
+  bottom: 12.3vh;
+  left: 149.7%;;
 }
 #b19 {
-  bottom: 14.1vh;
-  left: 158.6%;;
+  bottom: 13.7vh;
+  left: 161%;;
 }
 #b20 {
-  bottom: 14.1vh;
-  left: 167.6%;;
+  bottom: 13.5vh;
+  left: 171%;;
 }
 #b21 {
-  bottom: 14.1vh;
-  left: 174.6%;;
+  bottom: 13.7vh;
+  left: 177.4%;;
 }
 #b22 {
-  bottom: 12.7vh;
-  left: 178.6%;;
+  bottom: 13.7vh;
+  left: 177.5%;;
 }
 #b23 {
-  bottom: 13.1vh;
-  left: 189.6%;;
+  bottom: 12.7vh;
+  left: 189%;
 }
 #b24 {
   bottom: 14.1vh;

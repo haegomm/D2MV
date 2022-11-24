@@ -7,7 +7,7 @@
         type="audio/mp3"
       />
     </audio>
-    <nav>
+    <nav style="position:fixed; right:5%">
       <button @click="goToHome">HOME</button> |
       <button class="router-link" @click="goToTop20">TOP20</button> |
       <button @click="getSnow">SNOW❅</button> 
