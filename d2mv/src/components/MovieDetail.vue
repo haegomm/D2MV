@@ -125,7 +125,7 @@ export default {
   padding: 1rem;
   border: 1px solid #527cb2;
   border-radius: 0.25rem;
-  background: #fff;
+  background: rgb(133 178 211);
 }
 .modal__title {
   font-size: 1.5rem;

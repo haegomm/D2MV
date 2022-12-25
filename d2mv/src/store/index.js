@@ -13,7 +13,7 @@ export default new Vuex.Store({
     residents: [
       {
         id: '0',
-        name: '이가은',
+        name: '포도당서리꾼',
         password: '1234',
         movies: [
 

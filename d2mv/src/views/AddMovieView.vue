@@ -19,7 +19,6 @@
             </h1>
           </div>
           <div class="modal-body">
-            <!-- <h1>추천 영화 추가하기</h1> -->
             <MovieForm :id="id" />
           </div>
         </div>
@@ -82,11 +81,18 @@ export default {
   top: 15%;
   max-width: none;
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 
 .modal-body {
   overflow: auto;
+  width: 100%;
+  height: 70%;
+  scrollbar-color: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-content {

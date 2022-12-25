@@ -10,7 +10,7 @@
         <div>{{ movie?.title }}</div>
         <div v-if="movie">
           <img
-            :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
+            :src="`https://image.tmdb.org/t/p/w400/${movie?.poster_path}`"
             alt=""
           />
         </div>
@@ -27,7 +27,7 @@
           <div>{{ movie?.title }}</div>
           <div v-if="movie">
             <img
-              :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
+              :src="`https://image.tmdb.org/t/p/w400/${movie?.poster_path}`"
               alt=""
             />
           </div>
@@ -45,7 +45,7 @@
           <div>{{ movie?.title }}</div>
           <div v-if="movie">
             <img
-              :src="`https://image.tmdb.org/t/p/w350/${movie?.poster_path}`"
+              :src="`https://image.tmdb.org/t/p/w400/${movie?.poster_path}`"
               alt=""
             />
           </div>

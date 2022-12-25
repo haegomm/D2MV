@@ -1,5 +1,5 @@
 <template>
-  <div style="width:3400px">
+  <div class="top" style="width: 100%">
     <div class="container">
       <img
         id="b1"
@@ -17,65 +17,90 @@
         src="../assets/img/7.png"
         alt=""
       />
-      <img 
-        id="b3" 
+      <img
+        id="b3"
         data-bs-whatever="2"
         data-bs-toggle="modal"
-        data-bs-target="#recommendModal" 
-        src="../assets/img/8.png" 
-        alt="" />
-      <img 
+        data-bs-target="#recommendModal"
+        src="../assets/img/8.png"
+        alt=""
+      />
+      <img
         id="b4"
         data-bs-whatever="3"
         data-bs-toggle="modal"
-        data-bs-target="#recommendModal"  
-        src="../assets/img/9-1.png" 
-        alt="" />
-      <img 
+        data-bs-target="#recommendModal"
+        src="../assets/img/9-1.png"
+        alt=""
+      />
+      <img
         id="b5"
         data-bs-whatever="4"
         data-bs-toggle="modal"
-        data-bs-target="#recommendModal"  
-        src="../assets/img/10.png" 
-        alt="" />
-      <img id="b6"  src="../assets/img/11-1.png" alt=""/>
-      <img id="b7"  src="../assets/img/12-1.png" alt="" />
-      <img 
+        data-bs-target="#recommendModal"
+        src="../assets/img/10.png"
+        alt=""
+      />
+      <img id="b6" src="../assets/img/11-1.png" alt="" />
+      <img id="b7" src="../assets/img/12-1.png" alt="" />
+      <img
         id="b8"
         data-bs-whatever="7"
         data-bs-toggle="modal"
-        data-bs-target="#recommendModal"   
-        src="../assets/img/13-1.png" 
-        alt="" />
-      <img id="b9"  src="../assets/img/14.png" alt="" />
+        data-bs-target="#recommendModal"
+        src="../assets/img/13-1.png"
+        alt=""
+      />
+      <img id="b9" src="../assets/img/14.png" alt="" />
       <img id="b10" src="../assets/img/15.png" alt="" />
       <img id="t2" src="../assets/img/20.png" alt="" />
+      <img id="l1" src="../assets/img/3.png" alt="" />
       <img id="l2" src="../assets/img/2.png" alt="" />
       <img id="l5" src="../assets/img/4.png" alt="" />
       <img id="t1" src="../assets/img/18.png" alt="" />
       <img id="l6" src="../assets/img/2.png" alt="" />
       <img id="l7" src="../assets/img/4.png" alt="" />
-      <img id="b11"  src="../assets/img/11-1.png" alt=""/>
-      <img id="b12"  src="../assets/img/12-1.png" alt="" />
-      <img id="b13"  src="../assets/img/9-1.png" alt=""/>
-      <img id="b15"  src="../assets/img/7.png" alt=""/>
-      <img id="b16"  src="../assets/img/10.png" alt="" />
-      <img id="b17"  src="../assets/img/8.png" alt=""/>
-      <img id="b18"  src="../assets/img/9-1.png" alt="" />
-      <img id="b19"  src="../assets/img/11-1.png" alt=""/>
-      <img id="b20"  src="../assets/img/12-1.png" alt="" />
+      <img id="b11" src="../assets/img/11-1.png" alt="" />
+      <img id="b12" src="../assets/img/12-1.png" alt="" />
+      <img id="b13" src="../assets/img/9-1.png" alt="" />
+      <img id="b15" src="../assets/img/7.png" alt="" />
+      <img id="b16" src="../assets/img/10.png" alt="" />
+      <img id="b17" src="../assets/img/8.png" alt="" />
+      <img id="b18" src="../assets/img/9-1.png" alt="" />
+      <img id="b19" src="../assets/img/11-1.png" alt="" />
+      <img id="b20" src="../assets/img/12-1.png" alt="" />
       <!-- <img id="b21"  src="../assets/img/8.png" alt=""/> -->
-      <img id="b22"  src="../assets/img/7.png" alt="" />
-      <img id="b23"  src="../assets/img/13-2.png" alt=""/>
+      <img id="b22" src="../assets/img/7.png" alt="" />
+      <img id="b23" src="../assets/img/13-2.png" alt="" />
     </div>
-    <RecommendMoviesView/>
+    <RecommendMoviesView />
     <PasswordView />
     <AddMovieView />
-    <a href="#b23" style="position: absolute; right:3%; top: 35%; text-decoration: none; color: azure; ">옆마을 가기 &#9755;</a>
-    <a href="#b1" style="position: absolute; right:-9%; top: 35%; text-decoration: none; color: azure; ">옆마을 가기 &#9754;</a>
-    <div style="width:1700px;">
+    <a
+      href="#b23"
+      style="
+        position: absolute;
+        right: 3%;
+        top: 35%;
+        text-decoration: none;
+        color: azure;
+      "
+      >옆마을 가기 &#9755;</a
+    >
+    <a
+      href="#b1"
+      style="
+        position: absolute;
+        right: -9%;
+        top: 35%;
+        text-decoration: none;
+        color: azure;
+      "
+      >옆마을 가기 &#9754;</a
+    >
+    <!-- <div style="width: 1700px">
       <a href="#">&nbsp;</a>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -106,15 +131,19 @@ export default {
       this.santa = !this.santa;
     },
     goToTop20() {
-      this.$router.push({ name: 'top20' })
-    }
+      this.$router.push({ name: "top20" });
+    },
   },
 };
 </script>
 
+<style>
+::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
 <style scoped>
-
-
 button {
   border: 0;
   outline: 0;
@@ -129,161 +158,175 @@ img {
   filter: brightness(1.1);
 }
 
-#b1 {
-  bottom: 13.9vh;
-  left: 0;
-}
 img:hover {
   border: solid 5px transparent;
 }
 
+#b1 {
+  bottom: 13.5vh;
+  width: 10vw;
+  left: 0;
+}
+
 #b2 {
-  bottom: 13.9vh;
-  left: 10%;
+  bottom: 13.5vh;
+  width: 23vw;
+  left: 8.8%;
 }
 
 #b3 {
-  bottom: 13.9vh;
-  left: 22%;
+  bottom: 13.5vh;
+  width: 17vw;
+  left: 21.1%;
 }
 
 #b4 {
-  bottom: 12.5vh;
-  left: 30%;
+  bottom: 11.8vh;
+  width: 20vw;
+  left: 28.4%;
 }
 
 #b5 {
-  bottom: 13.9vh;
-  left: 40%;
+  bottom: 13.3vh;
+  width: 15vw;
+  left: 39.5%;
 }
 
 #b6 {
-  bottom: 13.9vh;
-  left: 47.2%;
+  bottom: 13.3vh;
+  width: 19vw;
+  left: 45.5%;
 }
 
 #b7 {
-  bottom: 13.75vh;
-  left: 58%;
+  bottom: 13.1vh;
+  width: 15vw;
+  left: 56.7%;
 }
 
 #b8 {
-  bottom: 13.1%;
-  left: 65%;
+  bottom: 12.2vh;
+  width: 19vw;
+  left: 62.6%;
 }
 
 #b9 {
-  bottom: 13.78vh;
-  left: 76.6%;
+  bottom: 13.2vh;
+  width: 16vw;
+  left: 75%;
 }
 
 #b10 {
-  bottom: 13.8vh;
+  bottom: 13.2vh;
+  width: 14vw;
   right: 0;
 }
 
 #l1 {
-  bottom: 8.3vh;
-  width: 1920px;
-  left: 0%;
+  bottom: 13.3vh;
+  height: 33vh;
+  left: 51.5%;
 }
 
 #l2 {
-  bottom: 13.9vh;
+  bottom: 13.4vh;
+  height: 35vh;
   left: 15%;
 }
 
 #l3 {
-  bottom: 13.9vh;
+  bottom: 13.4vh;
+  height: 35vh;
   left: 50%;
 }
 
 #l4 {
-  bottom: 13.3vh;
-  height: 302px;
+  bottom: 13.4vh;
+  height: 35vh;
   left: 44.2%;
 }
 
 #l5 {
-  bottom: 13.25vh;
-  height: 302px;
-  left: 11.1%;
+  bottom: 12.7vh;
+  height: 36vh;
+  left: 10.8%;
 }
 
 #t1 {
-  bottom: 11.9vh;
+  bottom: 10.4vh;
   left: 73%;
 }
 
 #l6 {
-  bottom: 13.9vh;
-  left: 70%;
+  bottom: 13.2vh;
+  height: 35vh;
+  left: 71%;
 }
 
 #l7 {
-  bottom: 13.2vh;
-  height: 302px;
-  left: 66.1%;
+  bottom: 12.5vh;
+  height: 35.5vh;
+  left: 67%;
 }
 
 #t2 {
-  bottom: 13.5vh;
+  bottom: 13vh;
   left: 21%;
 }
 
 #b11 {
-  bottom: 13.9vh;
+  bottom: 11vh;
   left: 94.6%;
 }
 
 #b12 {
-  bottom: 13.7vh;
+  bottom: 11.3vh;
   left: 105.6%;
 }
 #b13 {
-  bottom: 12.5vh;
+  bottom: 11.3vh;
   left: 113.3%;
 }
 
 #b15 {
-  bottom: 13.9vh;
-  left: 123.6%;;
+  bottom: 11.3vh;
+  left: 123.6%;
 }
 #b16 {
-  bottom: 13.7vh;
-  left: 135.7%;;
+  bottom: 11.3vh;
+  left: 135.7%;
 }
 #b17 {
-  bottom: 13.7vh;
-  left: 142.1%;;
+  bottom: 11.3vh;
+  left: 142.1%;
 }
 #b18 {
-  bottom: 12.3vh;
-  left: 149.7%;;
+  bottom: 11.3vh;
+  left: 149.7%;
 }
 #b19 {
-  bottom: 13.7vh;
-  left: 161%;;
+  bottom: 11.3vh;
+  left: 161%;
 }
 #b20 {
-  bottom: 13.5vh;
-  left: 171%;;
+  bottom: 11.3vh;
+  left: 171%;
 }
 #b21 {
-  bottom: 13.7vh;
-  left: 177.4%;;
+  bottom: 11.3vh;
+  left: 177.4%;
 }
 #b22 {
-  bottom: 13.7vh;
-  left: 177.5%;;
+  bottom: 11.3vh;
+  left: 177.5%;
 }
 #b23 {
-  bottom: 12.7vh;
+  bottom: 11.3vh;
   left: 189%;
 }
 #b24 {
-  bottom: 14.1vh;
-  left: 200.6%;;
+  bottom: 11.3vh;
+  left: 200.6%;
 }
 
 img:hover {
